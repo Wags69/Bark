@@ -50,50 +50,56 @@ public class AstralSorceryCompat {
 
   @SubscribeEvent
   public static void registerBlocks(RegistryEvent.Register<Block> event) {
-    if(Bark.isAstralSorceryLoaded && Bark.isRusticLoaded)
-      event.getRegistry().registerAll(
-          infusedWoodPlanksStairs,
-          infusedWoodPlanksHalf,
-          infusedWoodPlanksDouble,
-          
-          infusedWoodChair,
-          infusedWoodPlanksChair,
-          vibrantWoodChair,
-          
-          infusedWoodTable,
-          infusedWoodPlanksTable,
-          vibrantWoodTable
-      );
+    
+    if(Bark.isAstralSorceryLoaded) {      
+      event.getRegistry().registerAll(infusedWoodPlanksStairs, infusedWoodPlanksHalf, infusedWoodPlanksDouble);
+      if(Bark.isRusticLoaded)
+        event.getRegistry().registerAll(          
+            infusedWoodChair,
+            infusedWoodPlanksChair,
+            vibrantWoodChair,
+            
+            infusedWoodTable,
+            infusedWoodPlanksTable,
+            vibrantWoodTable
+        );
+    }
   }
 
   @SubscribeEvent
   public static void registerItemBlocks(RegistryEvent.Register<Item> event) {
-    if(Bark.isAstralSorceryLoaded && Bark.isRusticLoaded)
-      event.getRegistry().registerAll(
-          ((StairBase)infusedWoodPlanksStairs).getItemBlock(),
-          ((DoubleSlabBase)infusedWoodPlanksDouble).getItemSlab(),
-          
-          ((ChairBase)infusedWoodChair).getItemBlock(),
-          ((ChairBase)infusedWoodPlanksChair).getItemBlock(),
-          ((ChairBase)vibrantWoodChair).getItemBlock(),
-          ((TableBase)infusedWoodTable).getItemBlock(),
-          ((TableBase)infusedWoodPlanksTable).getItemBlock(),
-          ((TableBase)vibrantWoodTable).getItemBlock()
-      );
+    
+    if(Bark.isAstralSorceryLoaded) {      
+      event.getRegistry().registerAll(((StairBase)infusedWoodPlanksStairs).getItemBlock(), 
+          ((DoubleSlabBase)infusedWoodPlanksDouble).getItemSlab());
+      
+      if(Bark.isRusticLoaded)
+        event.getRegistry().registerAll(
+            ((ChairBase)infusedWoodChair).getItemBlock(),
+            ((ChairBase)infusedWoodPlanksChair).getItemBlock(),
+            ((ChairBase)vibrantWoodChair).getItemBlock(),
+            ((TableBase)infusedWoodTable).getItemBlock(),
+            ((TableBase)infusedWoodPlanksTable).getItemBlock(),
+            ((TableBase)vibrantWoodTable).getItemBlock()
+        );
+    }      
   }
 
   @SubscribeEvent
   public static void registerRenders(ModelRegistryEvent event) { 
-    if(Bark.isAstralSorceryLoaded && Bark.isRusticLoaded) {
+    
+    if(Bark.isAstralSorceryLoaded) {      
       registerRender(Item.getItemFromBlock(infusedWoodPlanksStairs));
       registerRender(Item.getItemFromBlock(infusedWoodPlanksHalf));
       
-      registerRender(Item.getItemFromBlock(infusedWoodChair));
-      registerRender(Item.getItemFromBlock(infusedWoodPlanksChair));
-      registerRender(Item.getItemFromBlock(vibrantWoodChair));
-      registerRender(Item.getItemFromBlock(infusedWoodTable));
-      registerRender(Item.getItemFromBlock(infusedWoodPlanksTable));
-      registerRender(Item.getItemFromBlock(vibrantWoodTable));
+      if(Bark.isRusticLoaded) {
+        registerRender(Item.getItemFromBlock(infusedWoodChair));
+        registerRender(Item.getItemFromBlock(infusedWoodPlanksChair));
+        registerRender(Item.getItemFromBlock(vibrantWoodChair));
+        registerRender(Item.getItemFromBlock(infusedWoodTable));
+        registerRender(Item.getItemFromBlock(infusedWoodPlanksTable));
+        registerRender(Item.getItemFromBlock(vibrantWoodTable));
+      }      
     }
   }
 

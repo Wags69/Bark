@@ -1,4 +1,4 @@
-infused_wood_planks
-astralsorcery:blocks/wood_planks
-astralsorcery:blocks/wood_planks
-astralsorcery:blocks/wood_planks
+bark_wisdomwood
+wizardry:blocks/wisdom_wood_log
+wizardry:blocks/wisdom_wood_log_top
+wizardry:blocks/wisdom_wood_log_top

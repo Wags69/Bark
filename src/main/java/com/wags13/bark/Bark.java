@@ -6,6 +6,7 @@ import com.wags13.bark.init.EmbersCompat;
 import com.wags13.bark.init.ModBlocks;
 import com.wags13.bark.init.RusticCompat;
 import com.wags13.bark.init.ThaumcraftCompat;
+import com.wags13.bark.init.WizardryCompat;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -65,8 +66,11 @@ public class Bark {
       ThaumcraftCompat.init();
     }
     if(isAstralSorceryLoaded) {
-      System.out.println("Astral sorcery loaded.");
+      //System.out.println("Astral sorcery loaded.");
       AstralSorceryCompat.init();
+    }
+    if(isWizardryLoaded) {
+      WizardryCompat.init();
     }
   }
 
