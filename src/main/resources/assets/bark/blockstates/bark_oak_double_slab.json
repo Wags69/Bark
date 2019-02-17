@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "variant=default": { "model": "bark:bark_oak_double_slab" }
+    }
+}

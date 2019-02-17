@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north":	{ "model": "bark:bark_ironwood_chair" },
+		"facing=east":	{ "model": "bark:bark_ironwood_chair", "y": 90},
+		"facing=south":	{ "model": "bark:bark_ironwood_chair", "y": 180 },
+		"facing=west":	{ "model": "bark:bark_ironwood_chair", "y": 270 }
+	}
+}

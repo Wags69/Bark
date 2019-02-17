@@ -1,0 +1,1 @@
+{"result": {"item": "bark:bark_oak_table", "count": 2}, "pattern": ["aaa", "b b"], "type": "forge:ore_shaped", "key": {"b": {"item": "bark:bark_oak", "count": 1}, "a": {"type": "forge:ore_dict", "ore": "stickWood"}}, "conditions": [{"type": "bark:rustic", "condition": "true"}]}

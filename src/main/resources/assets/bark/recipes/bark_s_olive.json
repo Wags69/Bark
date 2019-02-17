@@ -1,0 +1,1 @@
+{"result": {"item": "bark:bark_olive", "count": 3}, "pattern": ["aa", "aa"], "type": "forge:ore_shaped", "key": {"a": {"item": "bark:bark_olive_stairs", "count": 1}}, "conditions": [{"type": "bark:rustic", "condition": "true"}]}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "bark",
+  "name": "Bark",
+  "description": "One stop shop for all your wood needs!",
+  "version": "1.0.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["wags_13"],
+  "credits": "To everyone that has helped :)",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

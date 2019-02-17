@@ -1,0 +1,5 @@
+{
+	"conditions": {
+		"rustic": "com.wags13.bark.recipe.RusticRecipesFactory"
+	}
+}

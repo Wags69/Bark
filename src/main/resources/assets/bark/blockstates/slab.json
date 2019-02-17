@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom,variant=default": { "model": "bark:bark_oak_bottom_slab" },
+        "half=top,variant=default": { "model": "bark:bark_oak_top_slab" }
+    }
+}

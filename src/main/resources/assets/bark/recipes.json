@@ -1,0 +1,72 @@
+{
+	"type": "forge:ore_shaped",
+	"pattern" : ["###","###","###"],
+	"recipes" : {
+		"bark_oak": {
+			"result" : {
+				"item": "bark_oak",
+				"count": 0
+			},
+			"ingredient": {
+				"item": "minecraft:log",
+				"data": 0,
+				"count": 1
+			}
+		},
+		"bark_spruce": {
+			"result" : {
+				"item": "bark_spruce",
+				"count": 0
+			},
+			"ingredient": {
+				"item": "minecraft:log",
+				"data": 1,
+				"count": 1
+			}
+		},
+		"bark_birch": {
+			"result" : {
+				"item": "bark_birch",
+				"count": 0
+			},
+			"ingredient": {
+				"item": "minecraft:log",
+				"data": 2,
+				"count": 1
+			}
+		},
+		"bark_jungle": {
+			"result" : {
+				"item": "bark_jungle",
+				"count": 0
+			},
+			"ingredient": {
+				"item": "minecraft:log",
+				"data": 3,
+				"count": 1
+			}
+		},
+		"bark_acacia": {
+			"result" : {
+				"item": "bark_acacia",
+				"count": 0
+			},
+			"ingredient": {
+				"item": "minecraft:log2",
+				"data": 0,
+				"count": 1
+			}
+		},
+		"bark_dark_oak": {
+			"result" : {
+				"item": "bark_dark_oak",
+				"count": 0
+			},
+			"ingredient": {
+				"item": "minecraft:log2",
+				"data": 1,
+				"count": 1
+			}
+		},
+	}
+}
