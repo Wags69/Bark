@@ -1,4 +1,4 @@
-log_greatwood
-thaumcraft:blocks/log_greatwood
-thaumcraft:blocks/log_greatwood_top
-thaumcraft:blocks/log_greatwood_top
+infused_wood_planks
+astralsorcery:blocks/wood_planks
+astralsorcery:blocks/wood_planks
+astralsorcery:blocks/wood_planks

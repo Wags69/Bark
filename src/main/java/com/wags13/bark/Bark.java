@@ -1,5 +1,6 @@
 package com.wags13.bark;
 
+import com.wags13.bark.init.AstralSorceryCompat;
 import com.wags13.bark.init.BotaniaCompat;
 import com.wags13.bark.init.EmbersCompat;
 import com.wags13.bark.init.ModBlocks;
@@ -29,7 +30,8 @@ public class Bark {
   public static boolean isBotaniaLoaded = false;
   public static boolean isEmbersLoaded = false;
   public static boolean isThaumcraftLoaded = false;
-  //public static boolean isWizardryLoaded = false;
+  public static boolean isWizardryLoaded = false;
+  public static boolean isAstralSorceryLoaded = false;
   
   public static final CreativeTabs tabBark = new CreativeTabs("tabBark") {
     @Override
@@ -45,7 +47,8 @@ public class Bark {
     isBotaniaLoaded = Loader.isModLoaded("botania");
     isEmbersLoaded = Loader.isModLoaded("embers");
     isThaumcraftLoaded = Loader.isModLoaded("thaumcraft");
-    //isWizardryLoaded = Loader.isModLoaded("wizardry");
+    isAstralSorceryLoaded = Loader.isModLoaded("astralsorcery");
+    isWizardryLoaded = Loader.isModLoaded("wizardry");
     
     ModBlocks.init();
     
@@ -60,6 +63,10 @@ public class Bark {
     }
     if(isThaumcraftLoaded) {
       ThaumcraftCompat.init();
+    }
+    if(isAstralSorceryLoaded) {
+      System.out.println("Astral sorcery loaded.");
+      AstralSorceryCompat.init();
     }
   }
 
