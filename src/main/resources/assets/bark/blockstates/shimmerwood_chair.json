@@ -1,0 +1,1 @@
+{"variants": {"facing=north": {"model": "bark:shimmerwood_chair"}, "facing=east": {"model": "bark:shimmerwood_chair", "y": 90}, "facing=south": {"model": "bark:shimmerwood_chair", "y": 180}, "facing=west": {"model": "bark:shimmerwood_chair", "y": 270}}}
