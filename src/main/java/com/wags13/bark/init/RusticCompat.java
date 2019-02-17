@@ -59,8 +59,8 @@ public class RusticCompat {
     barkIronwood = new BarkBase("bark_ironwood");
     barkOlive = new BarkBase("bark_olive");
     
-    barkIronwoodStairs = new StairBase("bark_ironwood_stairs", barkIronwood.getDefaultState());
-    barkOliveStairs = new StairBase("bark_olive_stairs", barkOlive.getDefaultState());
+    barkIronwoodStairs = new StairBase("bark_ironwood", barkIronwood.getDefaultState());
+    barkOliveStairs = new StairBase("bark_olive", barkOlive.getDefaultState());
     
     barkIronwoodChair = new ChairBase("bark_ironwood");
     barkOliveChair = new ChairBase("bark_olive");
