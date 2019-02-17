@@ -1,7 +1,10 @@
 package com.wags13.bark;
 
+import com.wags13.bark.init.BotaniaCompat;
+import com.wags13.bark.init.EmbersCompat;
 import com.wags13.bark.init.ModBlocks;
 import com.wags13.bark.init.RusticCompat;
+import com.wags13.bark.init.ThaumcraftCompat;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -17,11 +20,16 @@ public class Bark {
   public static final String ID = "bark";
   public static final String NAME = "Bark";
   public static final String VERSION = "0.0.1";
+  public static final String DEPENDECIES = "";
 
   @Mod.Instance(ID)
   public static Bark instance;
 
   public static boolean isRusticLoaded = false;
+  public static boolean isBotaniaLoaded = false;
+  public static boolean isEmbersLoaded = false;
+  public static boolean isThaumcraftLoaded = false;
+  //public static boolean isWizardryLoaded = false;
   
   public static final CreativeTabs tabBark = new CreativeTabs("tabBark") {
     @Override
@@ -34,10 +42,24 @@ public class Bark {
   @Mod.EventHandler
   public static void preinit(FMLPreInitializationEvent event) {
     isRusticLoaded = Loader.isModLoaded("rustic");
+    isBotaniaLoaded = Loader.isModLoaded("botania");
+    isEmbersLoaded = Loader.isModLoaded("embers");
+    isThaumcraftLoaded = Loader.isModLoaded("thaumcraft");
+    //isWizardryLoaded = Loader.isModLoaded("wizardry");
+    
     ModBlocks.init();
     
     if(isRusticLoaded) {
       RusticCompat.init();
+    }
+    if(isBotaniaLoaded) {
+      BotaniaCompat.init();
+    }
+    if(isEmbersLoaded) {
+      EmbersCompat.init();
+    }
+    if(isThaumcraftLoaded) {
+      ThaumcraftCompat.init();
     }
   }
 

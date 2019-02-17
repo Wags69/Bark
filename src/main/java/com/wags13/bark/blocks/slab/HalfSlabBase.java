@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 public class HalfSlabBase extends SlabBase {
 
   public HalfSlabBase(String name, Material materialIn) {
-    super(name, materialIn);
+    super(name + "_slab", materialIn);
     setCreativeTab(Bark.tabBark);
   }
 

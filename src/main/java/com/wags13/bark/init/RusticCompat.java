@@ -80,14 +80,14 @@ public class RusticCompat {
     barkDarkOakTable = new TableBase("bark_dark_oak");
     barkBirchTable = new TableBase("bark_birch");
     
-    barkIronwoodHalf = new BarkHalfSlabBase("bark_ironwood_slab");
-    barkIronwoodDouble = new BarkDoubleSlabBase("bark_ironwood_double_slab", barkIronwoodHalf);
-    barkOliveHalf = new BarkHalfSlabBase("bark_olive_slab");
-    barkOliveDouble = new BarkDoubleSlabBase("bark_olive_double_slab", barkOliveHalf);
-    logIronwoodHalf = new BarkHalfSlabBase("log_ironwood_slab");
-    logIronwoodDouble = new BarkDoubleSlabBase("log_ironwood_double_slab", logIronwoodHalf);
-    logOliveHalf = new BarkHalfSlabBase("log_olive_slab");
-    logOliveDouble = new BarkDoubleSlabBase("log_olive_double_slab", logOliveHalf);
+    barkIronwoodHalf = new BarkHalfSlabBase("bark_ironwood");
+    barkIronwoodDouble = new BarkDoubleSlabBase("bark_ironwood", barkIronwoodHalf);
+    barkOliveHalf = new BarkHalfSlabBase("bark_olive");
+    barkOliveDouble = new BarkDoubleSlabBase("bark_olive", barkOliveHalf);
+    logIronwoodHalf = new BarkHalfSlabBase("log_ironwood");
+    logIronwoodDouble = new BarkDoubleSlabBase("log_ironwood", logIronwoodHalf);
+    logOliveHalf = new BarkHalfSlabBase("log_olive");
+    logOliveDouble = new BarkDoubleSlabBase("log_olive", logOliveHalf);
   }
   
   @SubscribeEvent

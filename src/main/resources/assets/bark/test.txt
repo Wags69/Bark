@@ -1,17 +1,4 @@
-bark_olive_table
-bark:bark_olive_table
-1
--1
-3
-   
-aaa
-b b
-0
-bark:bark_olive
-1
--1
-1
-stickWood
-1
-bark:rustic
-true
+log_greatwood
+thaumcraft:blocks/log_greatwood
+thaumcraft:blocks/log_greatwood_top
+thaumcraft:blocks/log_greatwood_top

@@ -78,38 +78,38 @@ public class ModBlocks {
     barkDarkOak = new BarkBase("bark_dark_oak");
     barkBirch = new BarkBase("bark_birch");
     
-    barkOakStairs = new StairBase("bark_oak_stairs", barkOak.getDefaultState());
-    barkSpruceStairs = new StairBase("bark_spruce_stairs", barkSpruce.getDefaultState());
-    barkJungleStairs = new StairBase("bark_jungle_stairs", barkJungle.getDefaultState());
-    barkAcaciaStairs = new StairBase("bark_acacia_stairs", barkAcacia.getDefaultState());
-    barkDarkOakStairs = new StairBase("bark_dark_oak_stairs", barkDarkOak.getDefaultState());
-    barkBirchStairs = new StairBase("bark_birch_stairs", barkBirch.getDefaultState());
+    barkOakStairs = new StairBase("bark_oak", barkOak.getDefaultState());
+    barkSpruceStairs = new StairBase("bark_spruce", barkSpruce.getDefaultState());
+    barkJungleStairs = new StairBase("bark_jungle", barkJungle.getDefaultState());
+    barkAcaciaStairs = new StairBase("bark_acacia", barkAcacia.getDefaultState());
+    barkDarkOakStairs = new StairBase("bark_dark_oak", barkDarkOak.getDefaultState());
+    barkBirchStairs = new StairBase("bark_birch", barkBirch.getDefaultState());
     
-    barkOakHalf = new BarkHalfSlabBase("bark_oak_slab");
-    barkOakDouble = new BarkDoubleSlabBase("bark_oak_double_slab", barkOakHalf);
-    barkAcaciaHalf = new BarkHalfSlabBase("bark_acacia_slab");
-    barkAcaciaDouble = new BarkDoubleSlabBase("bark_acacia_double_slab", barkAcaciaHalf);
-    barkDarkOakHalf = new BarkHalfSlabBase("bark_dark_oak_slab");
-    barkDarkOakDouble = new BarkDoubleSlabBase("bark_dark_oak_double_slab", barkDarkOakHalf);
-    barkSpruceHalf = new BarkHalfSlabBase("bark_spruce_slab");
-    barkSpruceDouble = new BarkDoubleSlabBase("bark_spruce_double_slab", barkSpruceHalf);
-    barkBirchHalf = new BarkHalfSlabBase("bark_birch_slab");
-    barkBirchDouble = new BarkDoubleSlabBase("bark_birch_double_slab", barkBirchHalf);
-    barkJungleHalf = new BarkHalfSlabBase("bark_jungle_slab");
-    barkJungleDouble = new BarkDoubleSlabBase("bark_jungle_double_slab", barkJungleHalf);
+    barkOakHalf = new BarkHalfSlabBase("bark_oak");
+    barkOakDouble = new BarkDoubleSlabBase("bark_oak", barkOakHalf);
+    barkAcaciaHalf = new BarkHalfSlabBase("bark_acacia");
+    barkAcaciaDouble = new BarkDoubleSlabBase("bark_acacia", barkAcaciaHalf);
+    barkDarkOakHalf = new BarkHalfSlabBase("bark_dark_oak");
+    barkDarkOakDouble = new BarkDoubleSlabBase("bark_dark_oak", barkDarkOakHalf);
+    barkSpruceHalf = new BarkHalfSlabBase("bark_spruce");
+    barkSpruceDouble = new BarkDoubleSlabBase("bark_spruce", barkSpruceHalf);
+    barkBirchHalf = new BarkHalfSlabBase("bark_birch");
+    barkBirchDouble = new BarkDoubleSlabBase("bark_birch", barkBirchHalf);
+    barkJungleHalf = new BarkHalfSlabBase("bark_jungle");
+    barkJungleDouble = new BarkDoubleSlabBase("bark_jungle", barkJungleHalf);
     
-    logOakHalf = new BarkHalfSlabBase("log_oak_slab");
-    logOakDouble = new BarkDoubleSlabBase("log_oak_double_slab", logOakHalf);
-    logAcaciaHalf = new BarkHalfSlabBase("log_acacia_slab");
-    logAcaciaDouble = new BarkDoubleSlabBase("log_acacia_double_slab", logAcaciaHalf);
-    logDarkOakHalf = new BarkHalfSlabBase("log_dark_oak_slab");
-    logDarkOakDouble = new BarkDoubleSlabBase("log_dark_oak_double_slab", logDarkOakHalf);
-    logSpruceHalf = new BarkHalfSlabBase("log_spruce_slab");
-    logSpruceDouble = new BarkDoubleSlabBase("log_spruce_double_slab", logSpruceHalf);
-    logBirchHalf = new BarkHalfSlabBase("log_birch_slab");
-    logBirchDouble = new BarkDoubleSlabBase("log_birch_double_slab", logBirchHalf);
-    logJungleHalf = new BarkHalfSlabBase("log_jungle_slab");
-    logJungleDouble = new BarkDoubleSlabBase("log_jungle_double_slab", logJungleHalf);
+    logOakHalf = new BarkHalfSlabBase("log_oak");
+    logOakDouble = new BarkDoubleSlabBase("log_oak", logOakHalf);
+    logAcaciaHalf = new BarkHalfSlabBase("log_acacia");
+    logAcaciaDouble = new BarkDoubleSlabBase("log_acacia", logAcaciaHalf);
+    logDarkOakHalf = new BarkHalfSlabBase("log_dark_oak");
+    logDarkOakDouble = new BarkDoubleSlabBase("log_dark_oak", logDarkOakHalf);
+    logSpruceHalf = new BarkHalfSlabBase("log_spruce");
+    logSpruceDouble = new BarkDoubleSlabBase("log_spruce", logSpruceHalf);
+    logBirchHalf = new BarkHalfSlabBase("log_birch");
+    logBirchDouble = new BarkDoubleSlabBase("log_birch", logBirchHalf);
+    logJungleHalf = new BarkHalfSlabBase("log_jungle");
+    logJungleDouble = new BarkDoubleSlabBase("log_jungle", logJungleHalf);
   }
   
   @SubscribeEvent

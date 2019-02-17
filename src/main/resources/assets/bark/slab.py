@@ -2,10 +2,10 @@ import json
 from pprint import pprint
 
 data = {}
-name = input("Block name: ")
-side = input("Side texture: ")
-top = input("Top texture: ")
-bottom = input("Bottom texture: ")
+name = input()
+side = input()
+top = input()
+bottom = input()
 
 with open('blockstates/double_slab.json') as old, \
 	open(f'blockstates/{name}_double_slab.json', 'w+') as new:
@@ -56,12 +56,3 @@ with open('models/block/double_slab.json') as old, \
 with open(f'models/item/{name}_slab.json', 'w+') as new:
 	data = { "parent": f"bark:block/{name}_bottom_slab" }
 	json.dump(data, new)
-
-	a = """
-	registerRender(Item.getItemFromBlock(logOakHalf));
-    registerRender(Item.getItemFromBlock(logAcaciaHalf));
-    registerRender(Item.getItemFromBlock(logBirchHalf));
-    registerRender(Item.getItemFromBlock(logDarkOakHalf));
-    registerRender(Item.getItemFromBlock(logJungleHalf));
-    registerRender(Item.getItemFromBlock(logSpruceHalf));
-	"""

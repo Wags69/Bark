@@ -17,7 +17,7 @@ public class DoubleSlabBase extends SlabBase {
   private SlabBase halfSlab;
 
   public DoubleSlabBase(String name, Material materialIn, SlabBase barkOakHalf) {
-    super(name, materialIn);
+    super(name + "_double_slab", materialIn);
     setCreativeTab(Bark.tabBark);
     
     this.halfSlab = barkOakHalf;

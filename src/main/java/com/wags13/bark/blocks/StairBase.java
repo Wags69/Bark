@@ -11,8 +11,8 @@ public class StairBase extends BlockStairs {
 
   public StairBase(String name, IBlockState modelState) {
     super(modelState);
-    setRegistryName(name);
-    setUnlocalizedName(name);
+    setRegistryName(name + "_stairs");
+    setUnlocalizedName(name + "_stairs");
     setCreativeTab(Bark.tabBark);
   }
 
